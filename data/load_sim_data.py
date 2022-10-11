@@ -37,3 +37,12 @@ def load_sim_term():
     filename = os.path.join(dirname, 'simulated/terminals.parquet')
     terminals_df = pd.read_parquet(filename)
     return terminals_df
+
+def load_sim_features():
+    import numpy as np
+    import pandas as pd
+    import os
+    dirname = os.path.dirname(__file__)
+    filename = os.path.join(dirname, 'simulated/features.parquet')
+    features_df = pd.read_parquet(filename)
+    return features_df
